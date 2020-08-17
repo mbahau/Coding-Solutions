@@ -1,35 +1,10 @@
-//بسم الله الرحمن الرحيم
-//اللہ کے نام سے شروع جو بڑا مہربان اور نہایت رحم والا ہے
-//Allah in the name of The Most Affectionate, the Merciful
-//अल्लाह के नाम से जो दयालु और कृपाशील है
-#include<iostream>
-#include<algorithm>
-#include<climits>
-#include<cmath>
-#include<vector>
-#include<map>
-#include<stack>
-#include<queue>
-#include<cstring>
-#include<ctime>
-
-using namespace std;
-#define fastio ios::sync_with_stdio(0); cin.tie(0)
-#define ll long long
-#define ull unsigned ll
-#define pb push_back
-
-#define endl '\n'
-#define mod 1000000007
-
-#define FOR(i,k,n) for(int i=k; i<n; i++)
-#define ROF(i,k,n) for(int i=k; i>=n; i--)
-#define MEMSET(t) memset(t,0,sizeof(t));
-#define time clock_t tStart
-#define Start clock()
-#define Time printf("Time taken: %.3fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC)
+//answer can include both the given nodes
+//problem https://codezen.codingninjas.com/practice/524/2196/maximum-element-between-two-nodes-of-bst
+//solution https://www.geeksforgeeks.org/maximum-element-two-nodes-bst/
 
 
+
+//2
 int maxVal(BinaryTreeNode<int> *root,int x)
 {
     int ans=INT_MIN;
@@ -44,6 +19,7 @@ int maxVal(BinaryTreeNode<int> *root,int x)
     if(!isit) return -5;
     return ans;
 }
+//1
 int maximumElement(BinaryTreeNode<int> *root, int x, int y)
 {
 	//find LCA
@@ -64,16 +40,3 @@ int maximumElement(BinaryTreeNode<int> *root, int x, int y)
     if(maxY==-1) return x;
     return max(maxX, max(maxY, max(x,y)));  
 }
-
-int main()
-{
-    fastio;
-    int t=1; //cin>>t;
-    while(t--)
-    {
-
-
-    }
-    return 0;
-}   
-
