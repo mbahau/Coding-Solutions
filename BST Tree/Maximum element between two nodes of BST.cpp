@@ -10,7 +10,7 @@ int maxVal(BinaryTreeNode<int> *root,int x)
     int ans=INT_MIN;
     bool isit=0;
     while(x!=root->data && root)
-    {
+    { 
         ans = max(ans,root->data);
         if(x>root->data) root=root->right;
         else if(x<root->data) root=root->left;
