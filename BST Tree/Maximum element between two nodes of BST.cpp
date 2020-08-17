@@ -15,7 +15,7 @@ int maxVal(BinaryTreeNode<int> *root,int x)
         if(x>root->data) root=root->right;
         else if(x<root->data) root=root->left;
         if(root->data == x) isit=1;
-    }
+    } 
     if(!isit) return -5;
     return ans;
 }
